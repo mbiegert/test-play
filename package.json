@@ -3,6 +3,9 @@
   "description": "hello jenkins test app",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "test": "mocha ./test/tests.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
