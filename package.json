@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "test": "mocha ./test/tests.js"
+    "test": "mocha --exit ./test/tests.js"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -12,6 +12,7 @@
   "devDependencies": {
     "eslint": "^6.0.1",
     "mocha": "^6.1.4",
-    "supertest": "^4.0.2"
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0"
   }
 }
