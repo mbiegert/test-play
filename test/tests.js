@@ -15,7 +15,7 @@ describe('GET /', function() {
     chai.request(app)
     .get('/')
     .end((err, res) => {
-      res.body.should.be.a('string');
+      res.body.should.be.a('object');
       done();
     });
   });
