@@ -10,13 +10,18 @@ chai.should();
 var app = require('../index.js');
 
 describe('GET /', function() {
-  it('respond with hello world', function(done) {
-    //navigate to root and check the the response is "hello world"
-    chai.request(app)
-    .get('/')
-    .end((err, res) => {
-      res.body.should.be.a('string');
-      done();
-    });
+  describe('special endpoint only', function () {
+    it('respond with hello world', function(done) {
+      //navigate to root and check the the response is "hello world"
+      chai.request(app)
+      .get('/')
+      .end((err, res) => {
+        res.body.should.be.a('object');
+        done();
+      });
+    });  
+  });
+  it('test in first suite', function (done) {
+    done();
   });
 });
