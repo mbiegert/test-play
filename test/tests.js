@@ -25,3 +25,7 @@ describe('GET /', function() {
     done();
   });
 });
+
+after(function() {
+  app.server.close();
+});
